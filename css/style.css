@@ -1,0 +1,273 @@
+/*RESET*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*INICIO*/
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(90, 90, 252), rgb(88, 219, 88));
+    background-size: 200%;
+    animation: animation 10s ease infinite;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+    height: 65vh;
+    background-color: white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 1px rgba(255, 255, 255, 1);
+    justify-content: space-around;
+}
+
+.user {
+    background-color: rgb(238, 238, 238);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 4%;
+    width: 50%;
+    text-align: center;
+}
+
+.passoword {
+    background-color: rgb(238, 238, 238);
+    outline: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 4%;
+    width: 50%;
+    text-align: center;
+}
+
+.btn-join {
+    background-color: cadetblue;
+    outline: none;
+    border: none;
+    padding: 3%;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+
+.remember {
+    color: rgb(123, 183, 185);
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+.credito {
+    font-size: 15px;
+    color: rgb(175, 175, 175);
+}
+
+
+/*Hover*/
+.remember:hover {
+    color: cadetblue;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-join:hover {
+    background-color: rgb(56, 109, 110);
+    cursor: pointer;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 5px rgba(56, 109, 110, 0.4);
+}
+
+/*Active*/
+.remember:active {
+    color: cadetblue;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*Focus*/
+.remember:focus {
+    color: cadetblue;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.user:focus {
+    background-color: white;
+    border: 1px solid rgb(56, 109, 110);
+    color: rgb(56, 109, 110);
+}
+
+.passoword:focus {
+    background-color: white;
+    border: 1px solid rgb(56, 109, 110);
+    color: rgb(56, 109, 110);
+}
+
+/*Visited*/
+.remember:visited {
+    color: cadetblue;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Keyframes*/
+@keyframes animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
