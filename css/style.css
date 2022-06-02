@@ -229,6 +229,7 @@ main {
     text-decoration: none;
     cursor: pointer;
 }
+
 /*Focus*/
 .remember:focus {
     color: cadetblue;
